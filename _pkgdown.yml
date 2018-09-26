@@ -3,7 +3,7 @@ template:
   default_assets: false
 
 development:
-  mode: released
+  mode: release
 
 reference:
   - title: Classification Metrics
