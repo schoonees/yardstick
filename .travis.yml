@@ -9,8 +9,12 @@ warnings_are_errors: false
 r:
   - release
 
-r_packages: 
+r_packages:
   - covr
- 
+
 after_success:
 - Rscript -e 'covr::codecov()'
+
+deploy:
+  provider: script
+  script: Rscript -e 'pkgdown::deploy_site_github(verbose = TRUE)'

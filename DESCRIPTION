@@ -20,6 +20,7 @@ Suggests:
     broom,
     testthat,
     covr,
+    pkgdown,
     purrr,
     tidyr,
     ggplot2
@@ -33,3 +34,5 @@ Imports:
     Rcpp
 LinkingTo: 
     Rcpp
+Remotes:
+    r-lib/pkgdown
