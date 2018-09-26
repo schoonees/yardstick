@@ -3,8 +3,8 @@ template:
   default_assets: false
 
 development:
-  mode: auto
-  
+  mode: released
+
 reference:
   - title: Classification Metrics
     contents:
@@ -32,7 +32,7 @@ reference:
     - ccc
   - title: Other Functions
     contents:
-    - matches("tidy")  
+    - matches("tidy")
 
 navbar:
   left:
