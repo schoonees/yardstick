@@ -2,24 +2,33 @@
 output: github_document
 ---
 
-<img src="yardstick_hex_thumb.png" align="center" height = "80px" align = "middle"/> 
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
 
-
+# yardstick <img src="man/figures/yardstick_hex_thumb.png" align="right" />
 [![Build Status](https://travis-ci.org/tidymodels/yardstick.svg?branch=master)](https://travis-ci.org/tidymodels/yardstick)
 [![Coverage Status](https://img.shields.io/codecov/c/github/tidymodels/yardstick/master.svg)](https://codecov.io/github/tidymodels/yardstick?branch=master)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/yardstick)](http://cran.rstudio.com/package=yardstick)
 [![Downloads](http://cranlogs.r-pkg.org/badges/yardstick)](http://cran.rstudio.com/package=yardstick)
-![](https://img.shields.io/badge/lifecycle-maturing-blue.svg)
+[![Lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://img.shields.io/badge/lifecycle-maturing-blue.svg)
+
+## Overview
+
+`yardstick` is a package to estimate how well models are working using [tidy data](https://www.jstatsoft.org/article/view/v059i10) principals. The package webpage is [`https://tidymodels.github.io/yardstick/`](https://tidymodels.github.io/yardstick/) for more information.
+
+For example, suppose you create a classification model and predict a data set. You might have data that look like this:
 
 ```{r load, include = FALSE, message = FALSE, warning = FALSE}
 library(yardstick)
 library(dplyr)
 options(width = 100, digits = 3)
 ```
-
-`yardstick` is a package to estimate how well models are working using [tidy data](https://www.jstatsoft.org/article/view/v059i10) principals. The package webpage is [`https://tidymodels.github.io/yardstick/`](https://tidymodels.github.io/yardstick/) for more information.
-
-For example, suppose you create a classification model and predict a data set. You might have data that look like this:
 
 ```{r class-data}
 library(yardstick)

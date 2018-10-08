@@ -1,9 +1,11 @@
 template:
   package: tidytemplate
-  default_assets: false
 
 development:
-  mode: release
+  mode: auto
+
+home:
+  strip_header: true
 
 reference:
   - title: Classification Metrics

@@ -1,5 +1,5 @@
 
-<img src="yardstick_hex_thumb.png" align="center" height = "80px" align = "middle"/>
+# yardstick <img src="man/figures/yardstick_hex_thumb.png" align="right" />
 
 [![Build
 Status](https://travis-ci.org/tidymodels/yardstick.svg?branch=master)](https://travis-ci.org/tidymodels/yardstick)
@@ -7,7 +7,9 @@ Status](https://travis-ci.org/tidymodels/yardstick.svg?branch=master)](https://t
 Status](https://img.shields.io/codecov/c/github/tidymodels/yardstick/master.svg)](https://codecov.io/github/tidymodels/yardstick?branch=master)
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/yardstick)](http://cran.rstudio.com/package=yardstick)
 [![Downloads](http://cranlogs.r-pkg.org/badges/yardstick)](http://cran.rstudio.com/package=yardstick)
-![](https://img.shields.io/badge/lifecycle-maturing-blue.svg)
+<https://img.shields.io/badge/lifecycle-maturing-blue.svg>
+
+## Overview
 
 `yardstick` is a package to estimate how well models are working using
 [tidy data](https://www.jstatsoft.org/article/view/v059i10) principals.
@@ -69,7 +71,7 @@ two_class_example %>% mnLogLoss(truth, !! lvl)
     ## # A tibble: 1 x 2
     ##   .metric   .estimate
     ##   <chr>         <dbl>
-    ## 1 mnLogLoss    -0.328
+    ## 1 mnLogLoss     0.328
 
 ## Installation
 
